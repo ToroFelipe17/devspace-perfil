@@ -1,0 +1,9 @@
+
+# Archivos del sistema macOS
+.DS_Store
+__MACOSX/
+
+# Dependencias y archivos privados
+node_modules/
+.env
+.env.*

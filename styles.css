@@ -1,0 +1,322 @@
+
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f5eeee;
+    color: #263445;
+}
+
+/* Encabezado principal */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #313131;
+    color: #ffffff;
+    padding: 18px 35px;
+    border-bottom: 4px solid #be0606;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Menú de navegación */
+.navegacion {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navegacion a:hover {
+    background-color: #be0606;
+}
+
+/* Distribución principal */
+.pagina {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex: 1;
+    width: 92%;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+/* Tarjeta de perfil */
+.perfil {
+    flex: 1;
+    min-width: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Portada del perfil */
+.portada {
+    position: relative;
+    height: 160px;
+    background-color: #313131;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Imagen posicionada sobre la portada */
+.avatar {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Información del perfil */
+.informacion {
+    text-align: center;
+    padding: 90px 35px 40px;
+}
+
+.informacion h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #313131;
+}
+
+.cargo {
+    color: #be0606;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.ubicacion {
+    color: #777777;
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+.descripcion {
+    color: #555555;
+    line-height: 1.7;
+    max-width: 450px;
+    margin: 0 auto 25px;
+}
+
+/* Botones profesionales */
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.boton i {
+    margin-right: 6px;
+}
+
+.github {
+    background-color: #313131;
+}
+
+.github:hover {
+    background-color: #000000;
+}
+
+.linkedin {
+    background-color: #be0606;
+}
+
+.linkedin:hover {
+    background-color: #6d0000;
+}
+
+/* Columna lateral */
+.panel-lateral {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 340px;
+    gap: 20px;
+}
+
+/* Tarjetas laterales */
+.panel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.panel-titulo h3 {
+    margin: 0 0 20px;
+    color: #313131;
+    font-size: 19px;
+}
+
+.panel-titulo i {
+    color: #be0606;
+    margin-right: 8px;
+}
+
+/* Información de KUTT */
+.proyecto {
+    padding: 15px;
+    background-color: #f5eeee;
+    border-left: 4px solid #be0606;
+    border-radius: 5px;
+}
+
+.etiqueta {
+    color: #6d0000;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.proyecto h4 {
+    margin: 12px 0;
+    font-size: 22px;
+    color: #313131;
+}
+
+.proyecto p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Lista de tecnologías */
+.panel-descripcion {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tecnologias span {
+    display: inline-block;
+    background-color: #fdaeae;
+    color: #6d0000;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Accesibilidad */
+a:focus-visible {
+    outline: 3px solid #be0606;
+    outline-offset: 3px;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #be0606;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.pie p {
+    margin: 0;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 780px) {
+
+    .encabezado {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navegacion {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .navegacion a {
+        padding: 10px;
+    }
+
+    .pagina {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+        margin: 25px auto;
+    }
+
+    .perfil,
+    .panel-lateral {
+        width: 100%;
+        flex: auto;
+    }
+
+    .informacion {
+        padding: 90px 20px 30px;
+    }
+
+    .botones {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .informacion h2 {
+        font-size: 22px;
+    }
+
+    .boton {
+        padding: 10px 16px;
+    }
+}
